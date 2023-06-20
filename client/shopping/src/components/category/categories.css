@@ -1,0 +1,14 @@
+.cate_container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media only screen and (max-width:740px){
+    .cate_container{
+        padding: 0;
+        flex-direction: column;
+    }
+}
+

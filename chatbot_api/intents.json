@@ -1,0 +1,587 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hi",
+                "Có ai ở đó không?",
+                "Hey",
+                "Alo",
+                "hai",
+                "Có ai ở đây không nhỉ",
+                "Hú hú",
+                "chào shop"
+            ],
+            "responses": [
+                "Hello",
+                "Rất vui khi được tư vấn cho bạn",
+                "Chào mừng bạn đến với shop thời trang 77Shop! Shop có thể hỗ trợ gì cho bạn ạ",
+                "Shop có thể giúp gì cho bạn",
+                "Chào ông/bà, tôi có thể giúp thể giúp gì cho quý khách?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Goodbye",
+                "See you later",
+                "cảm ơn shop",
+                "Bye",
+                "Bai",
+                "bb",
+                "Tạm biệt",
+                "Không mua nữa",
+                "baibai",
+                "bbye"
+            ],
+            "responses": [
+                "Hẹn gặp lại quý ông/bà",
+                "Chúc quý khách một ngày tốt lành",
+                "Hẹn quý khách một ngày không xa",
+                "Mong rằng quý khách sẽ trở lại sớm"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Cảm ơn",
+                "Thanks",
+                "Thank you",
+                "Cảm ơn bạn rất nhiều",
+                "Tuyệt vời lắm",
+                "Oke lắm anh bạn"
+            ],
+            "responses": [
+                "Rất vui khi được giúp đỡ",
+                "Đó là trách nhiệm của tôi",
+                "Gọi cho tôi bất cứ lúc nào cần thiết",
+                "Quá khen rồi ạ",
+                "Hân hạnh được giúp đỡ ông/bà"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        
+        
+        {
+            "tag": "options",
+            "patterns": [
+                "Bạn có thể giúp gì cho tôi",
+                "cần giúp đỡ",
+                "trợ giúp",
+                "cần tư vấn",
+                "Tôi cần người hỗ trợ"
+            ],
+            "responses": [
+                "Chào mừng bạn đã đến với thế giới thời trang nam-nữ 77Shop. Rất vui được trò chuyện cùng bạn,bạn đang cần: - Tư vấn sản phẩm, Khiếu nại, Hướng dẫn thanh toán, - Thông tin đơn hàng"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "introduce",
+            "patterns": [
+                "cần tư vấn sản phẩm",
+                "Shop bán mặt hàng gì vậy",
+                "bán mặt hàng gì v shop",
+                "tư vấn sản phẩm",
+                "sản phẩm đang được bày bán tại 77shop",
+                "bán những sản phẩm gì vậy",
+                "ở đây có những sản phẩm nào thế"
+            ],
+            "responses": [
+                "Hiện tại 77Shop đang kinh doanh các mặt hàng như áo sơ mi, áo phông, áo polo, quần âu, quần short, quần jeans nữ, váy . Bạn đang quan tâm mặt hàng nào nhỉ?"
+            ]
+        },
+        {
+            "tag": "shirtForGirlMen",
+            "patterns": [
+                "Tư vấn cho tôi về mẫu áo cho nữ",
+                "Tôi muốn mua áo",
+                "tư vấn sản phẩm áo",
+                "áo nam",
+                "mua áo dành cho nam",
+                "áo dành cho nữ",
+                "áo nữ"
+            ],
+            "responses": [
+                "Bạn đang cần tìm loại áo nào nhỉ, shop xin gửi những loại áo đang được bày bán tại 77Shop cho bạn dễ lựa chọn hơn ạ. \n - Áo sơ mi  \n - Áo polo  \n - Áo phông  \nShop tư vấn cho mình về áo dành cho nam-nữ, không biết bạn muốn mua sản phẩm nào ạ?"
+            ],
+            "context": [
+                "shirtForGirlMen"
+            ]
+        },
+        {
+            "tag": "buy-polo",
+            "patterns": [
+                "cần mua áo polo",
+                "muốn mua sản phẩm áo polo",
+                "tôi cần xem sản phẩm áo polo",
+                "em cần xem sản phẩm áo polo",
+                "tôi cần xem các mẫu áo polo",
+                "tôi muốn xem qua các sản phẩm áo polo",
+                "cần xem mẫu áo polo"
+            ],
+            "responses": [
+                "Bạn cần mua mã sản phẩm nào ạ?: Áo polo nam hay Áo polo nữ"
+            ]
+        },
+        
+        {
+            "tag": "poloforher",
+            "patterns": [
+                "Áo polo nữ",
+                "cần xem sản phẩm áo polo nữ",
+                "tôi muốn xem áo polo của nữ",
+                "tôi cần tìm áo polo nữ",
+                "cần mua áo polo nữ",
+                "cần mua sản phẩm áo polo nữ",
+                "muốn mua áo polo dành cho nữ",
+                "Tôi cần thông tin áo polo nữ",
+                "muốn mua sản phẩm áo polo nữ"
+            ],
+            "responses": [
+                "Shop xin gửi link áo polo dành cho nữ để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/women/Polo"
+            ]
+        },
+        {
+            "tag": "poloforhim",
+            "patterns": [
+                "Áo polo nam",
+                "tôi cần xem sản phẩm áo polo nam",
+                "muốn xem áo polo dành cho nam",
+                "cần tìm áo polo nam",
+                "cần mua áo polo nam",
+                "cần mua sản phẩm áo polo nam",
+                "muốn mua áo polo dành cho nam",
+                "Tôi cần thông tin áo polo nam",
+                "muốn mua sản phẩm áo polo nam"
+            ],
+            "responses": [
+                "Shop xin gửi link áo polo dành cho nam để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/men/Polo"
+            ]
+        },
+        {
+            "tag": "buy-Shirt",
+            "patterns": [
+                "cần mua áo sơ mi",
+                "muốn mua sản phẩm áo sơ mi",
+                "tôi cần xem sản phẩm áo sơ mi",
+                "em cần xem sản phẩm áo sơ mi",
+                "tôi cần xem các mẫu áo sơ mi",
+                "tôi muốn xem qua các sản phẩm áo sơ mi",
+                "cần xem mẫu áo sơ mi"
+            ],
+            "responses": [
+                "Bạn cần mua mã sản phẩm nào ạ?: Áo sơ mi nam hay Áo sơ mi nữ"
+            ]
+        },
+        {
+            "tag": "Shirtforher",
+            "patterns": [
+                "áo sơ mi nữ",
+                "cần xem sản phẩm áo sơ mi nữ",
+                "tôi muốn xem áo sơ mi của nữ",
+                "tôi cần tìm áo sơ mi nữ",
+                "cần mua áo sơ mi nữ",
+                "cần mua sản phẩm áo sơ mi nữ",
+                "muốn mua áo sơ mi dành cho nữ",
+                "Tôi cần thông tin áo polo nữ",
+                "muốn mua sản phẩm áo sơ mi nữ"
+            ],
+            "responses": [
+                "Shop xin gửi link áo sơ mi dành cho nữ để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/women/Somi"
+            ]
+        },
+        {
+            "tag": "Shirtforhim",
+            "patterns": [
+                "áo sơ mi nam",
+                "cần xem sản phẩm áo sơ mi nam",
+                "tôi muốn xem áo sơ mi của nam",
+                "tôi cần tìm áo sơ mi nam",
+                "cần mua áo sơ mi nam",
+                "cần mua sản phẩm áo sơ mi nam",
+                "muốn mua áo sơ mi dành cho nam",
+                "Tôi cần thông tin áo sơ mi nam",
+                "muốn mua sản phẩm áo sơ mi nam"
+            ],
+            "responses": [
+                "Shop xin gửi link áo sơ mi dành cho nam để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/men/Somi"
+            ]
+        },
+        {
+            "tag": "buy-Tshirt",
+            "patterns": [
+                "cần mua áo phông",
+                "muốn mua sản phẩm áo phông",
+                "tôi cần xem sản phẩm áo phông",
+                "em cần xem sản phẩm áo phông",
+                "tôi cần xem các mẫu áo phông",
+                "tôi muốn xem qua các sản phẩm áo phông",
+                "cần xem mẫu áo phông"
+            ],
+            "responses": [
+                "Bạn cần mua mã sản phẩm nào ạ?: Áo phông nam hay Áo phông nữ"
+            ]
+        },
+        
+        {
+            "tag": "Tshirtforher",
+            "patterns": [
+                "Áo phông nữ",
+                "cần xem sản phẩm áo phông nữ",
+                "tôi muốn xem áo phông của nữ",
+                "tôi cần tìm áo phông nữ",
+                "cần mua áo phông nữ",
+                "cần mua sản phẩm áo phông nữ",
+                "muốn mua áo phông dành cho nữ",
+                "Tôi cần thông tin áo phông nữ",
+                "muốn mua sản phẩm áo phông nữ"
+            ],
+            "responses": [
+                "Shop xin gửi link áo phông dành cho nữ để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/women/T-shirts"
+            ]
+        },
+        {
+            "tag": "Tshirtforhim",
+            "patterns": [
+                "Áo phông nam",
+                "tôi cần xem sản phẩm áo phông nam",
+                "muốn xem áo phông dành cho nam",
+                "cần tìm áo phông nam",
+                "cần mua áo phông nam",
+                "cần mua sản phẩm áo phông nam",
+                "muốn mua áo phông dành cho nam",
+                "Tôi cần thông tin áo phông nam",
+                "muốn mua sản phẩm áo phông nam"
+            ],
+            "responses": [
+                "Shop xin gửi link áo phông dành cho nam để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/men/T-shirts"
+            ]
+        },
+        {
+            "tag": "sizeTshirt",
+            "patterns": [
+                "có mấy loại size áo",
+                "Có những size áo",
+                "size áo polo",
+                "size áo sơ mi",
+                "size áo phông",
+                "Xin bảng size áo",
+                "cao",
+                "cân nặng"
+            ],
+            "responses": [
+                "Shop gửi bạn bảng size áo để khách hàng dễ tham khảo ạ:@@@@https://logan.vn/img/2014/Bang-size-ao-thun.png@@@@https://logan.vn/img/2014/Bang-size-ao-thun.png"
+            ]
+        },
+        {
+            "tag":"sizeTrouser",
+            "patterns": [
+                "có mấy loại size quần",
+                "Có những size quần",
+                "size quần jean",
+                "size quần tây âu",
+                "Xin bảng size quần",
+                "cao",
+                "cân nặng"
+            ],
+            "responses": [
+                "Shop gửi bạn bảng size quần để khách hàng dễ tham khảo ạ:@@@@https://baohoduchoa.vn/wp-content/uploads/2019/06/quan-ao-bao-ho-lao-dong-bia.jpg@@@@https://baohoduchoa.vn/wp-content/uploads/2019/06/quan-ao-bao-ho-lao-dong-bia.jpg"
+            ]
+        },
+        {
+            "tag": "trousersForHer",
+            "patterns": [
+                "Tư vấn cho tôi về mẫu quần cho nữ",
+                "Tôi muốn mua quần nữ",
+                "cần hỏi về mẫu quần dành cho nữ",
+                "Muốn hỏi về mẫu quần nữ",
+                "Muốn hỏi về mẫu quần dành cho nữ cao 1m8"
+            ],
+            "responses": [
+                "Hiện tại, 77Shop đang bán 2 sản phẩm quần dành cho nữ là Quần jean và Váy. Bạn cần mua sản phẩm nào ạ"
+            ],
+            "context": [
+                "short&trousers"
+            ]
+        },
+        {
+            "tag": "no-shorther",
+            "patterns": [
+                "muốn mua quần short nữ",
+                "tôi cần mua quần short nữ",
+                "có bán quần short cho nữ không",
+                "mình hỏi về quần short nữ"
+            ],
+            "responses": [
+                "Hiện tại, sản phẩm quần short nữ bạn đang cần shop không có bán ạ."
+            ]
+        },
+        {
+            "tag": "no-trousersher",
+            "patterns": [
+                "muốn mua quần âu nữ",
+                "tôi cần mua quần âu nữ",
+                "có bán quần âu cho nữ không",
+                "mình hỏi về quần âu nữ"
+            ],
+            "responses": [
+                "Hiện tại, sản phẩm quần âu nữ bạn đang cần shop không có bán ạ."
+            ]
+        },
+        {
+            "tag": "jeanforher",
+            "patterns": [
+                "muốn mua sản phẩm quần jean",
+                "tôi cần xem sản phẩm quần jean",
+                "em cần xem sản phẩm quần jean",
+                "tôi cần xem các mẫu quần jean",
+                "cần xem sản phẩm quần jean nữ",
+                "tôi muốn xem quần jean của nữ",
+                "tôi cần tìm quần jean nữ",
+                "cần mua sản phẩm quần jean nữ",
+                "muốn mua quần jean dành cho nữ",
+                "muốn mua sản phẩm quần jean nữ",
+                "cần xem mẫu quần jean"
+            ],
+            "responses": [
+                "Shop xin gửi link quần jean dành cho nữ để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/women/FemaleJeans"
+            ]
+        },
+        {
+            "tag": "dress",
+            "patterns": [
+                "muốn mua sản phẩm váy nữ",
+                "tôi cần xem sản phẩm váy",
+                "em cần xem sản phẩm váy",
+                "tôi cần xem các mẫu váy",
+                "cần xem sản phẩm váy ",
+                "tôi muốn xem váy nữ",
+                "tôi cần tìm váy",
+                "cần mua sản phẩm váy",
+                "muốn mua váy",
+                "muốn mua sản phẩm váy",
+                "cần xem mẫu váy nữ"
+            ],
+            "responses": [
+                "Shop xin gửi link váy nữ để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/women/Dress"
+            ]
+        },
+        {
+            "tag": "trousersForMen",
+            "patterns": [
+                "Tư vấn cho tôi về mẫu quần cho nam",
+                "Tôi muốn mua quần nam",
+                "cần hỏi về mẫu quần dành cho nam",
+                "Muốn hỏi về mẫu quần nam",
+                "Muốn hỏi về mẫu quần dành cho nam cao 1m8"
+            ],
+            "responses": [
+                "Hiện tại, 77Shop đang bán 2 sản phẩm quần dành cho nam là Quần tây âu và Quần short. Bạn cần mua sản phẩm nào ạ"
+            ],
+            "context": [
+                "short&trousers"
+            ]
+        },
+        {
+            "tag": "no-jeanhim",
+            "patterns": [
+                "shop có bán quần jean nam không",
+                "quần jean nam",
+                "muốn mua quần jean nam",
+                "tôi cần mua quần jean nam",
+                "có bán quần jean cho nam không",
+                "mình hỏi về quần jean nam"
+            ],
+            "responses": [
+                "Hiện tại, sản phẩm quần jean nam bạn đang cần shop không có sản phẩm. Bạn vui lòng tham khảo thêm các sản phẩm khác ạ"
+            ]
+        },    
+        {
+            "tag": "shortforhim",
+            "patterns": [
+                "muốn mua sản phẩm quần short",
+                "tôi cần xem sản phẩm quần short",
+                "em cần xem sản phẩm quần short",
+                "tôi cần xem các mẫu quần short",
+                "cần xem sản phẩm quần short",
+                "tôi muốn xem quần short",
+                "tôi cần tìm quần short",
+                "cần mua sản phẩm quần short",
+                "muốn mua quần short dành cho nam",
+                "muốn mua sản phẩm quần short nam",
+                "cần xem mẫu quần short"
+            ],
+            "responses": [
+                "Shop xin gửi link quần short dành cho nam để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/men/Shorts"
+            ]
+        },
+        {
+            "tag": "trouserforhim",
+            "patterns": [
+                "muốn mua sản phẩm quần âu",
+                "tôi cần xem sản phẩm quần âu",
+                "em cần xem sản phẩm quần âu",
+                "tôi cần xem các mẫu quần âu",
+                "cần xem sản phẩm quần âu",
+                "tôi muốn xem quần âu",
+                "tôi cần tìm quần âu",
+                "cần mua sản phẩm quần âu",
+                "muốn mua quần âu dành cho nam",
+                "muốn mua sản phẩm quần âu nam",
+                "cần xem mẫu quần âu"
+            ],
+            "responses": [
+                "Shop xin gửi link quần âu dành cho nam để khánh hàng dễ tham khảo và lựa chọn sản phẩm phù hợp ạ:@@@@http://localhost:3000/products/men/WesternPants"
+            ]
+        },
+        {
+            "tag": "address",
+            "patterns": [
+                "Địa chỉ shop ỏ đâu thế ạ",
+                "Cho xin địa chỉ?",
+                "Nhà ở TPHCM thì đến đâu để mua",
+                "Có địa điểm nào ở Hà Nội không",
+                "Có mấy chi nhánh thế",
+                "Chi nhánh của shop mình ở những đâu v"
+            ],
+            "responses": [
+                "Shop có 1 chi nhánh ở TPHCM. Địa chỉ: 97 Man Thiện, Hiệp Phú, Thủ Đức"
+            ]
+        },
+        {
+            "tag": "ordersuggestions",
+            "patterns": [
+                "Tôi mua áo này",
+                "Đặt 1 áo sơ mi kẻ vàng số 4 về Lê Văn Việt nhé shop",
+                "Tôi mua 1 áo polo màu vàng và 1 áo sơ mi kẻ đen số 6",
+                "Làm sao để đặt hàng",
+                "Đặt hàng",
+                "Mua hàng như nào",
+                "mua hàng",
+                "làm sao để mua hàng",
+                "Đặt hàng ntn v"
+            ],
+            "responses": [
+                "Để mua hàng bạn tiến hành thêm sản phẩm vào giỏ hàng và tiến hành bổ sung các bước tiếp theo để có đơn hàng cho mình. Tổng thanh toán bao gồm tiền hàng và phí ship bên cửa hàng là 20k áp dụng ở TPHCM và 30k áp dụng cho các tỉnh khác. Bạn vui lòng chú ý điện thoại để nhận đơn hàng nhé. "
+            ]
+        },
+        {
+            "tag": "customercomplaints",
+            "patterns": [
+                "khiếu nại sản phẩm",
+                "ý kiến về shop",
+                "Khiếu nại",
+                "tôi muốn khiếu nại"
+            ],
+            "responses": [
+                "Thành thật xin lỗi bạn về vấn đề gặp phải, bạn gửi thông tin về email 77shop@gmail.com để được nhân viên hỗ trợ bạn nhé"
+            ]
+        },
+        {
+            "tag": "cancelorder",
+            "patterns": [
+                "Được hủy đơn không shop",
+                "hủy đơn",
+                "Mình xin hủy đơn hàng nhé",
+                "Hủy giúp mình đơn này nhé",
+                "Cho tôi hủy đơn này",
+                "Mình muốn hủy đơn",
+                "Hủy giúp em đơn vừa rồi với shop ơi",
+                "Tôi muốn hủy đơn vừa đặt nhé"
+            ],
+            "responses": [
+                "Chào bạn, trường hợp bạn đặt hàng khi đã có tài khoản, bạn vui lòng truy cập vào link sau để hủy đơn hàng.  Còn với trường bạn đặt hàng khi chưa có tài khoản, bạn cung cấp số điện thoại và mã đơn hàng qua email 77Shop để được nhân viên hỗ trợ."
+            ]
+        },
+        {
+            "tag": "wrongaddress",
+            "patterns": [
+                "giao hàng sai",
+                "Giao sai mẫu rồi shop ơi",
+                "Giao hàng bị lỗi rồi",
+                "Nhầm size của tôi rồi",
+                "Hàng bị lỗi rồi ạ",
+                "Shop ơi hàng bị lỗi rồi",
+                "hàng bị lỗi rồi",
+                "Hàng của tôi bị thiếu rồi"
+            ],
+            "responses": [
+                "Dạ trước hết thay mặt shop xin lỗi quý khách vì sự nhầm lẫn này ạ. Mình cho shop xin sdt để shop check đơn và phiền bạn chụp ảnh hàng bạn đã nhận để được shop hỗ trợ đổi cho bạn nha! Cảm ơn bạn!"
+            ]
+        },
+        {
+            "tag": "norequest",
+            "patterns": [
+                "giảm giá được không",
+                "Giảm giá di shop ơi đắt quá",
+                "bớt tí được không shop",
+                "muốn giảm bớt tiền",
+                "Đắt quá sao mua nổi",
+                "có thể giảm giá không đắt quá"
+            ],
+            "responses": [
+                "Dạ trước hết thay mặt shop xin lỗi quý khách vì sự nhầm lẫn này ạ. Mình cho shop xin sdt để shop check đơn và phiền bạn chụp ảnh hàng bạn đã nhận để được shop hỗ trợ đổi cho bạn nha! Cảm ơn bạn!"
+            ]
+        },
+        {
+            "tag": "ship",
+            "patterns": [
+                "Phí ship đắt quá",
+                "Ship đắt",
+                "Ship đắt quá",
+                "Có thể miễn phí vận chuyển không?",
+                "Giảm tiền ship được k"
+            ],
+            "responses": [
+                "Dạ trước hết thay mặt shop xin lỗi quý khách vì sự nhầm lẫn này ạ. Mình cho shop xin sdt để shop check đơn và phiền bạn chụp ảnh hàng bạn đã nhận để được shop hỗ trợ đổi cho bạn nha! Cảm ơn bạn!"
+            ]
+        },
+        {
+            "tag": "pay",
+            "patterns": [
+                "Thanh toán hàng kiểu gì vậy",
+                "Thanh toán",
+                "Kiểu thanh toán",
+                "Loại thanh toán",
+                "Có thể thanh toán bằng Alipay k",
+                "Tôi muốn thanh toán"
+            ],
+            "responses": [
+                "Hiện tại bên shop đang nhận 2 hình thức thanh toán chính đó là tiền mặt và chuyển khoản đó ạ. Quý khách tham khảo và chọn phương án phù hợp để dễ dàng thanh toán cho đơn hàng của mình ạ !"
+            ]
+        },
+        {
+            "tag": "name-product",
+            "patterns": [
+                "tôi muốn mua sản phẩm",
+                "tôi muốn mua sản phẩm RelaxShirt125",
+                "tôi muốn xem giá sản phẩm RelaxShirt125",
+                "giá của sản phẩm RelaxShirt125 là bao nhiêu",
+                "giá của sản phẩm sssBlank8",
+                "giá của sản phẩm",
+                "giá bao nhiêu",    
+                "tôi muốn xem thông tin sản phẩm",
+                "tôi muốn xem thông tin sản phẩm RelaxShirt125",
+                "tôi muốn xem sản phẩm",
+                "tôi muôn xem sản phẩm RelaxShirt125",
+                "tôi muốn xem sản phẩm sssBlank8",
+                "tôi muon xem san pham Pique29"
+            ],
+            "responses": [
+                ""
+            ]
+        }
+    ]
+}
